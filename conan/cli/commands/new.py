@@ -21,7 +21,8 @@ def new(conan_api, parser, *args):
                         "autotools_lib, autotools_exe. "
                         "E.g. 'conan new cmake_lib -d name=hello -d version=0.1'. "
                         "You can define your own templates too by inputting an absolute path "
-                        "as your template, or a path relative to your conan home folder."
+                        "as your template, or a path relative to 'templates/command/new' in "
+                        "your conan home folder."
                         )
     parser.add_argument("-d", "--define", action="append",
                         help="Define a template argument as key=value, e.g., -d name=mypkg")
